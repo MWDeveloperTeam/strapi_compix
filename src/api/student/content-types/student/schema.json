@@ -1,0 +1,104 @@
+{
+  "kind": "collectionType",
+  "collectionName": "students",
+  "info": {
+    "singularName": "student",
+    "pluralName": "students",
+    "displayName": "student",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "firstName": {
+      "type": "string",
+      "required": true,
+      "minLength": 3
+    },
+    "middleName": {
+      "type": "string",
+      "required": false
+    },
+    "lastName": {
+      "type": "string",
+      "required": true,
+      "minLength": 3
+    },
+    "fatherName": {
+      "type": "string",
+      "required": true,
+      "minLength": 3
+    },
+    "nationality": {
+      "type": "string",
+      "required": true,
+      "minLength": 3
+    },
+    "domicile": {
+      "type": "string",
+      "required": true,
+      "minLength": 3
+    },
+    "dateOfBirth": {
+      "type": "date",
+      "required": true
+    },
+    "gender": {
+      "type": "string",
+      "required": true,
+      "minLength": 4
+    },
+    "email": {
+      "type": "email",
+      "required": true,
+      "minLength": 4,
+      "unique": true
+    },
+    "phone": {
+      "type": "integer",
+      "required": true,
+      "unique": true,
+      "min": 10
+    },
+    "programName": {
+      "type": "string",
+      "required": true,
+      "minLength": 3
+    },
+    "programCode": {
+      "type": "string",
+      "required": true,
+      "minLength": 3
+    },
+    "address": {
+      "type": "text",
+      "required": true,
+      "minLength": 3
+    },
+    "sourceOfInformation": {
+      "type": "string",
+      "required": true,
+      "minLength": 3
+    },
+    "qualification": {
+      "type": "string",
+      "required": true,
+      "minLength": 3
+    },
+    "photo": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "acedemicSession": {
+      "type": "string",
+      "required": true,
+      "minLength": 3
+    }
+  }
+}
